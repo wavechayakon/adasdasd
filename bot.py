@@ -183,6 +183,7 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 gif_url = "https://cdn.discordapp.com/attachments/1147962239618383873/1302024437813477446/9cec0437907931599f4c953f19232066.gif?ex=6729e800&is=67289680&hm=92c6d605bb7ebfcc7a8465a317ebf03910c069ccdfd882fb7ac229c035590611&"
+text_embed = "BOT // POWERED BY .wavechayakon // VERSION 1.1"
 
 @bot.command()
 @commands.has_permissions(administrator=True)
@@ -196,7 +197,7 @@ async def arceusx(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -212,7 +213,7 @@ async def deltaandroid(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -228,7 +229,7 @@ async def deltaios(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -244,7 +245,7 @@ async def codex(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -260,7 +261,7 @@ async def fluxus(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -276,7 +277,7 @@ async def appleware(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -292,7 +293,7 @@ async def cryptic(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -308,7 +309,7 @@ async def solara(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
@@ -324,7 +325,7 @@ async def wave(ctx):
         color=0xFF0000
     )
     embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
-    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+    embed.set_footer(text=text_embed)
 
     await ctx.send(embed=embed, view=view)
 
