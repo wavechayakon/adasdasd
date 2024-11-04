@@ -182,43 +182,150 @@ async def help(ctx):
         embed.add_field(name=cmd, value=description, inline=False)
     await ctx.send(embed=embed)
 
-# คำสั่งส่งข้อความพร้อมปุ่มและ GIF
+gif_url = "https://cdn.discordapp.com/attachments/1147962239618383873/1302024437813477446/9cec0437907931599f4c953f19232066.gif?ex=6729e800&is=67289680&hm=92c6d605bb7ebfcc7a8465a317ebf03910c069ccdfd882fb7ac229c035590611&"
+
 @bot.command()
 @commands.has_permissions(administrator=True)
-async def ex(ctx):
-    # กำหนดคลาสปุ่ม
-    class DownloadButton(discord.ui.Button):
-        def __init__(self, label, url):
-            super().__init__(label=label, style=discord.ButtonStyle.url, url=url)
-
-    # URL ของปุ่ม
-    buttons = [
-        ("Arceus X", 'https://spdmteam.com/index?os=android'),
-        ("Delta-Android", 'https://deltaexploits.gg/delta-executor-mobile'),
-        ("Delta-iOS", 'https://deltaexploits.gg/delta-executor-ios'),
-        ("CodeX", 'https://codex.lol/android'),
-        ("Fluxus", 'https://fluxteam.cc/android'),
-        ("Apple-Ware", 'https://appleware.dev/download'),
-        ("Cryptic", 'https://getcryptic.net/'),
-        ("Solara", 'https://getsolara.dev/download'),
-        ("Wave", 'https://getwave.gg/')
-    ]
-
-    # เพิ่มปุ่มลงในวิว
+async def arceusx(ctx):
     view = discord.ui.View()
-    for label, url in buttons:
-        view.add_item(DownloadButton(label=label, url=url))
+    view.add_item(discord.ui.Button(label="Arceus X", style=discord.ButtonStyle.url, url='https://spdmteam.com/index?os=android'))
 
-    # เนื้อหาข้อความใน embed พร้อม GIF
     embed = discord.Embed(
-        title="🌟 Click Button to Download Roblox Executor! 🌟",
-        description="เลือกตัวรันที่คุณต้องการใช้",
-        color=0xFF0000  # สีแดง
+        title="🌟 Download Arceus X 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Arceus X",
+        color=0xFF0000
     )
-    embed.set_image(url="https://cdn.discordapp.com/attachments/1147962239618383873/1302024437813477446/9cec0437907931599f4c953f19232066.gif?ex=67269c40&is=67254ac0&hm=31a8d98d9e41e54c1461f61a60fe1a684b6d597ee93a8b1c0a7df59de691664f&")  # เปลี่ยน URL ให้เป็นที่อยู่ของ GIF ที่คุณต้องการใช้
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
     embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
 
-    # ส่งข้อความพร้อม embed และปุ่ม
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def deltaandroid(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Delta-Android", style=discord.ButtonStyle.url, url='https://deltaexploits.gg/delta-executor-mobile'))
+
+    embed = discord.Embed(
+        title="🌟 Download Delta-Android 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Delta-Android",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def deltaios(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Delta-iOS", style=discord.ButtonStyle.url, url='https://deltaexploits.gg/delta-executor-ios'))
+
+    embed = discord.Embed(
+        title="🌟 Download Delta-iOS 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Delta-iOS",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def codex(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="CodeX", style=discord.ButtonStyle.url, url='https://codex.lol/android'))
+
+    embed = discord.Embed(
+        title="🌟 Download CodeX 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด CodeX",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def fluxus(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Fluxus", style=discord.ButtonStyle.url, url='https://fluxteam.cc/android'))
+
+    embed = discord.Embed(
+        title="🌟 Download Fluxus 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Fluxus",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def appleware(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Apple-Ware", style=discord.ButtonStyle.url, url='https://appleware.dev/download'))
+
+    embed = discord.Embed(
+        title="🌟 Download Apple-Ware 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Apple-Ware",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def cryptic(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Cryptic", style=discord.ButtonStyle.url, url='https://getcryptic.net/'))
+
+    embed = discord.Embed(
+        title="🌟 Download Cryptic 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Cryptic",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def solara(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Solara", style=discord.ButtonStyle.url, url='https://getsolara.dev/download'))
+
+    embed = discord.Embed(
+        title="🌟 Download Solara 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Solara",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
+    await ctx.send(embed=embed, view=view)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def wave(ctx):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Button(label="Wave", style=discord.ButtonStyle.url, url='https://getwave.gg/'))
+
+    embed = discord.Embed(
+        title="🌟 Download Wave 🌟",
+        description="คลิกปุ่มด้านล่างเพื่อดาวน์โหลด Wave",
+        color=0xFF0000
+    )
+    embed.set_image(url=gif_url)  # ใส่ URL ของ GIF ที่ต้องการ
+    embed.set_footer(text="BOT // POWERED BY .wavechayakon // VERSION 1.0")
+
     await ctx.send(embed=embed, view=view)
 
 server_on()
